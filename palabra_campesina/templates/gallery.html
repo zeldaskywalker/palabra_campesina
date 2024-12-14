@@ -1,0 +1,24 @@
+<head>
+    <title>GALLERY</title>
+</head>
+
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<body>
+    <div class="gallery_container">
+        <h1 id="palabra_de">GALERÍA</h1>
+        <div class="row justify-content-around">
+        {% for d in data %}
+            <div class="singular_palabra_in_row">
+                <img class="gallery_image" src="{% with d.image|first as first_file %}{{ first_file.url }}{% endwith %}" alt="{{d.title}}">
+                <div id="palabras_title">
+                    <i><a href="/gallery/{{d.id}}"">{{d.title}}</a></i></h4>
+                </div>
+            </div>
+            {% if forloop.counter|divisibleby:2 %}</div><br><div class="row justify-content-around">{% endif %}
+        {% endfor %}
+        </div>
+    </div>
+</body>
+{% endblock content %}

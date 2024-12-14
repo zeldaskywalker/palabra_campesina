@@ -1,0 +1,17 @@
+<head>
+    <title>HOME</title>
+</head>
+
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<body>
+    <div class="home_container"">
+        <div id="home_image">
+            <img class="img-mobile" src="{% static '/images/homepage_long.png' %}">
+            <img class="img-desktop" src="{% static '/images/homepage_wide.png' %}">
+            <!-- <img src="{% static '/images/homepage.png' %}" alt="Palabra Campesina" style="width: 100%;"> -->
+        </div>
+    </div>
+</body>
+{% endblock content %}

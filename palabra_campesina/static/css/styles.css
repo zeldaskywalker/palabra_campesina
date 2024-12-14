@@ -1,0 +1,198 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 2em;
+}
+
+nav {
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+#nav_bar ol {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+}
+
+/* @media only screen and (max-width: 700px) {
+    #nav_bar, #nav_bar ol{
+        flex-direction: column;
+    }
+    #nav_bar ol li{
+        margin-bottom: 10px;
+    }
+
+    /* #nav_bar #links {
+        float: none;
+        display: none;
+        text-align: left;
+    } */
+
+.path {
+    font-size: 4vmin;
+}
+
+.path a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+/* .palabra_container {
+    padding-top: 2em;
+} */
+
+.sobre_container {
+    padding-top: 1em;
+}
+
+.gallery_container {
+    padding-top: 1em;
+}
+
+.home_container {
+    padding-top: 2em;
+}
+
+/* header a {
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: green;
+    text-decoration: underline;
+} */
+
+#home_image {
+    width: 100%;
+}
+
+.img-desktop {
+    width: 100%;
+    display: none;
+}
+
+.img-mobile {
+    width: 100%;
+}
+
+@media (min-width: 750px) {
+    .img-mobile {
+       display: none;
+   }
+    .img-desktop {
+       display: block;
+   }
+  
+}
+
+.navbar-toggler {
+    margin: 0 auto;
+}
+
+/* #home_image img {
+    width: 100%;
+} */
+
+#palabra_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+#palabra_de {
+    font-size: calc(2rem + 1vw);
+}
+
+#return-button {
+    height:100px;
+    width:100px;
+    font-size: 20px;
+}
+
+#palabra_video_quote {
+    display: flex;
+    justify-content: space-between;
+}
+
+#palabra_portrait {
+    width: 50%;
+    height: 20em;
+}
+
+#palabra_video {
+    background-color: blue; /* TO BE DELETED */
+    /* TO BE EDITED, CHECK IN WITH ALEX */
+    width: 50%;
+    height: 20em;
+}
+
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+
+.palabras_container {
+    padding-top: 2em;
+}
+
+.gallery_image {
+    width: 100%;
+}
+
+.palabras_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.singular_palabra_in_row {
+    flex: 0 0 47%;
+}
+
+#palabras_title {
+    width: 90%;
+    text-align: center;
+}
+
+#palabras_title a {
+    color: black;
+    text-decoration: none;
+}
+
+
+#palabras_title a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+#palabras_video_thumbnail {
+    background-color: green;
+    width: 90%;
+    height: 30vh;
+}
+
+#palabra_quote {
+    font-style: oblique;
+    text-align: justify;
+    width: 45%;
+    font-size: 2.1vmin;
+    font-weight: 500;
+}
+
+#gallery_quote {
+    font-style: oblique;
+    text-align: justify;
+    font-size: 3vmin;
+    font-weight: 500;
+}
+
+
+/* EXPECTED */
+/* #palabra_image {
+} */
