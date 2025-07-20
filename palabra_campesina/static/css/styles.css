@@ -1,6 +1,8 @@
 body {
     font-family: 'Helvetica Neue', sans-serif;
     padding: 2em;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 nav {
@@ -157,6 +159,7 @@ header a:hover {
 
 #palabras_title {
     width: 90%;
+    font-size: 25px;
     text-align: center;
 }
 
