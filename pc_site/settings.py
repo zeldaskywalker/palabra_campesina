@@ -31,8 +31,8 @@ DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS",
                           "127.0.0.1," \
                           "localhost," \
-                          "https://clownfish-app-4b869.ondigitalocean.app/," \
-                          "palabracampesina.com" \
+                          "clownfish-app-4b869.ondigitalocean.app," \
+                          "palabracampesina.com," \
                           "www.palabracampesina.com").split(",")
 
 
