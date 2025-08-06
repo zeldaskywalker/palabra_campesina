@@ -1,69 +1,43 @@
-body {
-    font-family: 'Helvetica Neue', sans-serif;
-    padding: 2em;
-    margin-left: 7%;
-    margin-right: 7%;
-}
-
-@font-face {
-  font-family: scribe;
-  src: url(/static/fonts/american-scribe-regular.ttf);
-}
-
 #headings {
     font-family: scribe;
 }
 
-h1 {
-    font-size: 25px;
+figcaption {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-align: right;
+    font-size: 1.5em;
+    font-style: italic;
 }
 
-p {
-    font-size: 16px;
-}
-
-nav {
-    border-bottom: 1px solid black;
+#alex-img {
     width: 100%;
 }
 
-#nav_bar ol {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    list-style-type: none;
-    align-items: center;
+#angela-img {
+    width: 95%;
 }
-
-/* @media only screen and (max-width: 700px) {
-    #nav_bar, #nav_bar ol{
-        flex-direction: column;
-    }
-    #nav_bar ol li{
-        margin-bottom: 10px;
-    }
-
-    /* #nav_bar #links {
-        float: none;
-        display: none;
-        text-align: left;
-    } */
-
-.path {
-    font-size: 4vmin;
-}
-
-.path a:hover {
-    color: green;
-    text-decoration: underline;
-}
-
-/* .palabra_container {
-    padding-top: 2em;
-} */
 
 .sobre_container {
     padding-top: 1em;
+}
+
+.sobre_container p {
+    font-size: 1.5em;
+}
+
+.forty-percent {
+    width: 40%;
+}
+
+.sixty-percent {
+    padding-left: 1em;
+    width: 60%;
+}
+
+#two-column-pic-text {
+    display: flex;
+    justify-content: space-between;
 }
 
 .gallery_container {
@@ -71,18 +45,8 @@ nav {
 }
 
 .home_container {
-    padding-top: 2em;
+    padding-top: 1em;
 }
-
-/* header a {
-    color: black;
-    text-decoration: none;
-}
-
-header a:hover {
-    color: green;
-    text-decoration: underline;
-} */
 
 #home_image {
     width: 100%;
@@ -104,16 +68,7 @@ header a:hover {
     .img-desktop {
        display: block;
    }
-  
 }
-
-.navbar-toggler {
-    margin: 0 auto;
-}
-
-/* #home_image img {
-    width: 100%;
-} */
 
 #palabra_title {
     display: flex;
@@ -212,7 +167,40 @@ header a:hover {
     font-weight: 500;
 }
 
+.img-desktop-container {
+    position: relative;
+    width: 100%;
+}
 
-/* EXPECTED */
-/* #palabra_image {
-} */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  /* background-color: gray; */
+}
+
+.img-desktop-container:hover .overlay {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+}
+
+.text {
+  color: white;
+  position: absolute;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vw;
+}
+
+.text p {
+    font-weight: bold;
+    font-size: 2.64vw;
+    text-align: justify;
+    text-align-last: justify;
+}
