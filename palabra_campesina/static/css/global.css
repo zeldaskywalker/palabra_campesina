@@ -9,20 +9,20 @@
 
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    padding: 2em;
+    padding: 1.6em;
     margin-left: 11%;
     margin-right: 11%;
 }
 
 h1 {
-  padding-top: 1vh;
+    padding-top: 0.8vh;
     font-weight: bold;
-    font-size: 2.1em;
-    padding-bottom: 1vh;
+    font-size: 1.7em;
+    padding-bottom: 0.8vh;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 p {

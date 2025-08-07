@@ -6,8 +6,13 @@ figcaption {
     padding-top: 1vh;
     padding-bottom: 1vh;
     text-align: right;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-style: italic;
+}
+
+#logo {
+    width: 60%;
+    min-width: 30em;
 }
 
 #alex-img {
@@ -16,26 +21,17 @@ figcaption {
 
 #angela-img {
     float: left;
-    min-width: 42em;
-    width: 50%;
-    padding-right: 1em;
+    min-width: 20em;
+    width: 40%;
+    padding-right: 0.8em;
 }
 
 .sobre_container {
-    padding-top: 1em;
+    padding-top: 0.8em;
 }
 
 .sobre_container p {
-    font-size: 1.5em;
-}
-
-.forty-percent {
-    width: 40%;
-}
-
-.sixty-percent {
-    padding-left: 1em;
-    width: 60%;
+    font-size: 1.2em;
 }
 
 #two-column-pic-text {
@@ -44,11 +40,11 @@ figcaption {
 }
 
 .gallery_container {
-    padding-top: 1em;
+    padding-top: 0.8em;
 }
 
 .home_container {
-    padding-top: 1em;
+    padding-top: 0.8em;
 }
 
 #home_image {
@@ -114,7 +110,7 @@ figcaption {
   }
 
 .palabras_container {
-    padding-top: 2em;
+    padding-top: 0.8em;
 }
 
 .gallery_image {
