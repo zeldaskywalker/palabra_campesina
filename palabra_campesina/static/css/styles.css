@@ -15,7 +15,10 @@ figcaption {
 }
 
 #angela-img {
-    width: 95%;
+    float: left;
+    min-width: 42em;
+    width: 50%;
+    padding-right: 1em;
 }
 
 .sobre_container {
