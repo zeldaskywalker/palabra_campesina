@@ -1,9 +1,10 @@
 /* global.css */
-@import url("navbar.css");
-@import url("sobre.css");
 @import url("galeria.css");
 @import url("historia.css");
 @import url("inicio.css");
+@import url("navbar.css");
+@import url("palabra.css");
+@import url("sobre.css");
 
 :root {
 	--palabra-green: #d3e399;

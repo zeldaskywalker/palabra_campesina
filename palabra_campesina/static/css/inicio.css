@@ -20,30 +20,30 @@
 /* image overlay effect to show text */
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
 }
 
 /* reveal overlay layer on hover */
-.img_desktop-container:hover .overlay {
+.img_desktop_container:hover .overlay {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
 }
 
 /* text container for overlay */
 .text {
-  color: white;
-  position: absolute;
-  padding-left: 1.6vw;
-  padding-right: 1.6vw;
-  padding-top: 1.6vw;
+    color: white;
+    position: absolute;
+    padding-left: 1.6vw;
+    padding-right: 1.6vw;
+    padding-top: 1.6vw;
 }
 
 /* text in container for overlat */
