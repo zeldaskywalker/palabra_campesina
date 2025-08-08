@@ -1,0 +1,44 @@
+.palabras_container {
+    padding-top: 0.8em;
+}
+
+.palabras_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#palabras_video_thumbnail {
+    background-color: green;
+    width: 90%;
+    height: 30vh;
+}
+
+#palabra_video {
+    background-color: blue; /* TO BE DELETED */
+    /* TO BE EDITED, CHECK IN WITH ALEX */
+    width: 50%;
+    height: 20em;
+}
+
+#palabra_video_quote {
+    display: flex;
+    justify-content: space-between;
+}
+
+#palabra_de {
+    font-size: calc(2rem + 1vw);
+}
+
+#palabra_title {
+    width: 90%;
+    text-align: center;
+}
+
+#palabra_quote {
+    font-style: oblique;
+    text-align: justify;
+    font-size: 1.5em;
+    font-weight: 400;
+}

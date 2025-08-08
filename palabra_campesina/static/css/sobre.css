@@ -1,0 +1,19 @@
+.sobre_container {
+    padding-top: 0.8em;
+}
+
+.sobre_container p {
+    font-size: 1.2em;
+}
+
+/* images in sobre page */
+#alex_img {
+    width: 100%;
+}
+
+#angela_img {
+    float: left;
+    min-width: 23em;
+    width: 40%;
+    padding-right: 0.8em;
+}

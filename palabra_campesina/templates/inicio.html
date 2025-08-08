@@ -1,5 +1,5 @@
 <head>
-    <title>HOME</title>
+    <title>INICIO</title>
 </head>
 
 {% extends "base.html" %}
@@ -9,10 +9,10 @@
     <div class="home_container">
         <h1>Historias de las comunidades agrícolas del Valle de Pájaro</h1>
         
-        <div id="home_image">
+        <div id="home_image_container">
             <figure>
-                <div class="img-desktop-container">
-                    <img class="img-desktop" src="{% static '/images/peering_through_homepage_wide.jpg' %}">
+                <div class="img_desktop_container">
+                    <img class="img_desktop" src="{% static '/images/peering_through_homepage_wide.jpg' %}">
                     <div class="overlay">
                         <div class="text">
                             <p>
@@ -26,7 +26,7 @@
                 </div>
                 <figcaption>“Peering Through” Foto de Ángela Higuera</figcaption>
             </figure>
-            <img class="img-mobile" src="{% static '/images/homepage_long.png' %}">
+            <img class="img_mobile" src="{% static '/images/homepage_long.png' %}">
         </div>
     </div>
 </body>

@@ -1,10 +1,13 @@
 /* global.css */
 @import url("navbar.css");
-@import url("styles.css");
+@import url("sobre.css");
+@import url("galeria.css");
+@import url("historia.css");
+@import url("inicio.css");
 
 :root {
-  --palabra-green: #d3e399;
-  --hover-green: #c3d28d;
+	--palabra-green: #d3e399;
+	--hover-green: #c3d28d;
 }
 
 @font-face {
@@ -19,10 +22,6 @@ body {
     margin-right: 11%;
 }
 
-.gallery-img-div {
-  background-color: var(--palabra-green);
-}
-
 h1 {
     padding-top: 0.8vh;
     font-weight: bold;
@@ -31,9 +30,22 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+	font-size: 1.2em;
 }
 
 p {
-    font-size: 16px;
+	font-size: 16px;
+}
+
+figcaption {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-align: right;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#logo {
+    width: 60%;
+    min-width: 22em;
 }

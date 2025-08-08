@@ -5,11 +5,11 @@
 {% block content %}
 {% load static %}
 <body>
-    <div class="gallery_container">
-        <div id="palabra_title">
+    <div class="galeria_container">
+        <div id="galeria_title">
             <h1>{{title}}</h1>
             <h1>
-                <button id="return-to-gallery-button" type="button" class="btn btn-primary" onclick="history.back()">
+                <button id="return_to_galeria_button" type="button" class="btn btn-primary" onclick="history.back()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path></svg>
                         regresar a galería
@@ -20,7 +20,7 @@
             <img style="max-width: 100%;" src="{% with image|first as first_file %}{{ first_file.url }}{% endwith %}" alt="{{title}}">
             <figcaption><i>Foto por Ángela Higuera</i></figcaption>
         </figure>
-        <div id="gallery_quote">
+        <div id="galeria_quote">
             {{description}}
         </div>
     </div>
