@@ -12,10 +12,10 @@
         {% for d in data %}
             <div class="singular_palabra_in_row">
                 <div class="gallery-img-div">
-                    <a href="/gallery/{{d.id}}"><img class="galeria_image" src="{% with d.gallery_image|first as first_file %}{{ first_file.url }}{% endwith %}" alt="{{d.title}}"></a>
+                    <a href="/galeria/{{d.id}}"><img class="galeria_image" src="{% with d.gallery_image|first as first_file %}{{ first_file.url }}{% endwith %}" alt="{{d.title}}"></a>
                 </div>
                 <div id="in_gallery_title">
-                    <h2><i><a href="/gallery/{{d.id}}">{{d.title}}</a></i></h2>
+                    <h2><i><a href="/galeria/{{d.id}}">{{d.title}}</a></i></h2>
                 </div>
             </div>
             {% if forloop.counter|divisibleby:2 %}</div><br><div class="row justify-content-around">{% endif %}
