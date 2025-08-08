@@ -7,13 +7,15 @@
 {% load static %}
 <body>
     <div class="gallery_container">
-        <h1 id="palabra_de">GALERÍA</h1>
+        <h1>GALERÍA</h1>
         <div class="row justify-content-around">
         {% for d in data %}
             <div class="singular_palabra_in_row">
-                <img class="gallery_image" src="{% with d.image|first as first_file %}{{ first_file.url }}{% endwith %}" alt="{{d.title}}">
+                <div class="gallery-img-div">
+                    <a href="/gallery/{{d.id}}"><img class="gallery_image" src="{% with d.gallery_image|first as first_file %}{{ first_file.url }}{% endwith %}" alt="{{d.title}}"></a>
+                </div>
                 <div id="palabras_title">
-                    <i><a href="/gallery/{{d.id}}"">{{d.title}}</a></i></h4>
+                    <h2><i><a href="/gallery/{{d.id}}">{{d.title}}</a></i></h2>
                 </div>
             </div>
             {% if forloop.counter|divisibleby:2 %}</div><br><div class="row justify-content-around">{% endif %}

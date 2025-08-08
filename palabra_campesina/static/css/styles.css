@@ -1,3 +1,5 @@
+@import url("global.css");
+
 #headings {
     font-family: scribe;
 }
@@ -12,7 +14,7 @@ figcaption {
 
 #logo {
     width: 60%;
-    min-width: 30em;
+    min-width: 22em;
 }
 
 #alex-img {
@@ -21,7 +23,7 @@ figcaption {
 
 #angela-img {
     float: left;
-    min-width: 20em;
+    min-width: 23em;
     width: 40%;
     padding-right: 0.8em;
 }
@@ -78,12 +80,6 @@ figcaption {
     font-size: calc(2rem + 1vw);
 }
 
-#return-button {
-    height:100px;
-    width:100px;
-    font-size: 20px;
-}
-
 #palabra_video_quote {
     display: flex;
     justify-content: space-between;
@@ -128,9 +124,20 @@ figcaption {
     flex: 0 0 47%;
 }
 
+#return-to-gallery-button {
+    background-color: var(--palabra-green);
+    border-color: var(--palabra-green);
+    color: black;
+}
+
+#return-to-gallery-button:hover {
+    background-color: var(--hover-green);
+    border-color: var(--hover-green);
+}
+
 #palabras_title {
     width: 90%;
-    font-size: 25px;
+    /* font-size: 25px; */
     text-align: center;
 }
 
@@ -162,8 +169,8 @@ figcaption {
 #gallery_quote {
     font-style: oblique;
     text-align: justify;
-    font-size: 3vmin;
-    font-weight: 500;
+    font-size: 1.5em;
+    font-weight: 400;
 }
 
 .img-desktop-container {
@@ -192,14 +199,14 @@ figcaption {
 .text {
   color: white;
   position: absolute;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 2vw;
+  padding-left: 1.6vw;
+  padding-right: 1.6vw;
+  padding-top: 1.6vw;
 }
 
 .text p {
     font-weight: bold;
-    font-size: 2.64vw;
+    font-size: 2.3em;
     text-align: justify;
     text-align-last: justify;
 }

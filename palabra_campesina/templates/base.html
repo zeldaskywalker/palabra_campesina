@@ -5,15 +5,17 @@
     <link rel="stylesheet" href="{% static 'css/global.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<script src="{% static 'scripts/navbar.js' %}"></script>
 <!-- Add in header for nav bar below. -->
 <header>
     <div style="text-align: center;">
-        <a href="/"><img id="logo" src="{% static '/images/logo.png' %}" alt=""></a>
+        <a href="/"><img id="logo" src="{% static '/images/logo.png' %}" alt="Palabra Campesina"></a>
     </div>
 
     <!-- custom nav, no bootstrap! -->
     <nav>
+        <button id="nav-button">
+            <img id="nav-dropdown" src="{% static '/images/nav-dropdown.png' %}" alt="navigation dropdown">
+        </button>
         <div id="nav-container">
             <div id="navbar">
                 <ol id="nav-items">
@@ -36,5 +38,7 @@
     </div>
 </header>
 
-{% block content %}{% endblock %}
+{% block content %}
+{% endblock %}
+<script src="{% static 'scripts/navbar.js' %}"></script>
 </html>
