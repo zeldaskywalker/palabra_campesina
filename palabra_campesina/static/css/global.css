@@ -1,6 +1,6 @@
 /* global.css */
 @import url("galeria.css");
-@import url("historia.css");
+@import url("historias.css");
 @import url("inicio.css");
 @import url("navbar.css");
 @import url("palabra.css");
@@ -21,6 +21,18 @@ body {
     padding: 1.6em;
     margin-left: 11%;
     margin-right: 11%;
+}
+
+@media (max-width: 680px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #logo {
+        width: 100% !important;
+        min-width: unset !important;
+    }
 }
 
 h1 {

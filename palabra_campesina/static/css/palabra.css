@@ -2,6 +2,12 @@
     padding-top: 0.8em;
 }
 
+@media (max-width: 680px) {
+    .palabra_container {
+        padding-top: 0;
+    }
+}
+
 .palabras_row {
     display: flex;
     flex-direction: row;

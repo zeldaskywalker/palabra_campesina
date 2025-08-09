@@ -2,6 +2,12 @@
     padding-top: 0.8em;
 }
 
+@media (max-width: 680px) {
+    .home_container {
+        padding-top: 0;
+    }
+}
+
 #home_image_container {
     width: 100%;
 }
@@ -14,7 +20,7 @@
 
 .img_desktop {
     width: 100%;
-    display: none;
+    display: block;
 }
 
 /* image overlay effect to show text */
@@ -57,14 +63,31 @@
 /* home image on mobile */
 .img_mobile {
     width: 100%;
+    display: none;
 }
 
-/* media queries for displaying image */
-@media (min-width: 750px) {
+@media (max-width: 680px) {
     .img_mobile {
-       display: none;
-   }
+        display: block;
+    }
+
+    .img_desktop_container {
+        display: none;
+    }
+
     .img_desktop {
-       display: block;
-   }
+        display: none;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .text p {
+        display: none;
+    }
+
+    figcaption {
+        font-size: 1em !important;
+    }
 }

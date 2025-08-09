@@ -2,6 +2,12 @@
     padding-top: 0.8em;
 }
 
+@media (max-width: 680px) {
+    .sobre_container {
+        padding-top: 0;
+    }
+}
+
 .sobre_container p {
     font-size: 1.2em;
 }

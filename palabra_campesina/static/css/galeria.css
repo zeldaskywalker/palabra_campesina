@@ -2,6 +2,17 @@
     padding-top: 0.8em;
 }
 
+@media (max-width: 680px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .galeria_container {
+        padding-top: 0;
+    }
+}
+
 .galeria_image {
     width: 100%;
 }
