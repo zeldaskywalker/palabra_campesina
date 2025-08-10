@@ -8,6 +8,14 @@
     }
 }
 
+@media (max-width: 450px) {
+    #angela_img {
+        width: 100% !important;
+        min-width: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
 .sobre_container p {
     font-size: 1.2em;
 }
