@@ -11,6 +11,23 @@
     .galeria_container {
         padding-top: 0;
     }
+
+    #loading h1 {
+        font-size: 2em;
+    }
+}
+
+#loading {
+    height: auto;
+    background-color: var(--palabra-green);
+    border: 2px solid var(--palabra-green);
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+}
+
+#loading h1 {
+    font-size: 4em;
 }
 
 .galeria_image {
