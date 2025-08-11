@@ -8,19 +8,25 @@
 <body>
     <div class="galeria_container">
         <h1>GALERÍA</h1>
-        <div class="row justify-content-around">
-        {% for d in data %}
-            <div class="singular_palabra_in_row">
-                <div class="gallery-img-div">
-                    <a href="/galeria/{{d.id}}"><img class="galeria_image" src="{% with d.gallery_image|first as first_file %}{{ first_file.url }}{% endwith %}" alt="{{d.title}}"></a>
+        <div id="loading">
+            <h1>Un momento mientras recuperamos las imágenes...</h1>
+        </div>
+        <div id="gallery_items">
+            <div class="row justify-content-around">
+            {% for d in data %}
+                <div class="singular_palabra_in_row">
+                    <div class="gallery-img-div">
+                        <a href="/galeria/{{d.id}}"><img class="galeria_image" src="{% with d.gallery_image|first as first_file %}{{ first_file.url }}{% endwith %}" alt="{{d.title}}"></a>
+                    </div>
+                    <div id="in_gallery_title">
+                        <h2><i><a href="/galeria/{{d.id}}">{{d.title}}</a></i></h2>
+                    </div>
                 </div>
-                <div id="in_gallery_title">
-                    <h2><i><a href="/galeria/{{d.id}}">{{d.title}}</a></i></h2>
-                </div>
+                {% if forloop.counter|divisibleby:2 %}</div><br><div class="row justify-content-around">{% endif %}
+            {% endfor %}
             </div>
-            {% if forloop.counter|divisibleby:2 %}</div><br><div class="row justify-content-around">{% endif %}
-        {% endfor %}
         </div>
     </div>
 </body>
+<script src="{% static 'scripts/galeria.js' %}"></script>
 {% endblock content %}
