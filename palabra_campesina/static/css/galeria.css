@@ -2,9 +2,6 @@
     padding-top: 0.8em;
 }
 
-#alert {
-}
-
 @media (max-width: 680px) {
     .row {
         display: flex;
