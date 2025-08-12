@@ -2,6 +2,9 @@
     padding-top: 0.8em;
 }
 
+#alert {
+}
+
 @media (max-width: 680px) {
     .row {
         display: flex;
@@ -18,16 +21,14 @@
 }
 
 #loading {
+    padding: 20px;
+    color: black;
+    margin-bottom: 15px;
     height: auto;
     background-color: var(--palabra-green);
     border: 2px solid var(--palabra-green);
     border-radius: 10px;
-    padding: 1em;
     text-align: center;
-}
-
-#loading h1 {
-    font-size: 4em;
 }
 
 .galeria_image {
@@ -58,7 +59,7 @@
 }
 
 #in_gallery_title {
-    width: 90%;
+    width: 100%;
     text-align: center;
 }
 

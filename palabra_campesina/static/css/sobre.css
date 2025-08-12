@@ -8,11 +8,19 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 555px) {
     #angela_img {
         width: 100% !important;
         min-width: 0 !important;
         padding-right: 0 !important;
+        padding-bottom: 1em;
+    }
+
+    #zelda_img {
+        width: 100% !important;
+        min-width: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 1em;
     }
 }
 
@@ -26,6 +34,13 @@
 }
 
 #angela_img {
+    float: left;
+    min-width: 23em;
+    width: 40%;
+    padding-right: 0.8em;
+}
+
+#zelda_img {
     float: left;
     min-width: 23em;
     width: 40%;
