@@ -17,7 +17,9 @@
             </h1>
         </div>
         <figure>
-            <img style="max-width: 100%;" src="{% with image|first as first_file %}{{ first_file.url }}{% endwith %}" alt="{{title}}">
+            <div id="galeria_img_wrapper">
+                <img id="solo_galeria_image" fetchpriority="high" style="max-width: 100%;" src="{% with image|first as first_file %}{{ first_file.url }}{% endwith %}" alt="{{title}}">
+            </div>
             <figcaption><i>Foto por Ángela Higuera</i></figcaption>
         </figure>
         <div id="galeria_quote">
@@ -25,4 +27,5 @@
         </div>
     </div>
 </body>
+<script src="{% static 'scripts/galeria.js' %}"></script>
 {% endblock content %}

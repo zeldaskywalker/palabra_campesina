@@ -32,6 +32,16 @@
     width: 100%;
 }
 
+#galeria_img_wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-color: var(--palabra-green);
+}
+
+#solo_galeria_img {
+    display: block;
+}
+
 #galeria_title {
     display: flex;
     justify-content: space-between;
