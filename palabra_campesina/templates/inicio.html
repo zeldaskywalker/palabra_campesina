@@ -1,20 +1,26 @@
+{% load static %}
+{% include "header.html" %}
+
 <head>
     <title>INICIO</title>
 </head>
 
-{% extends "base.html" %}
-{% block content %}
-{% load static %}
-<body>
-    <div class="home_container">
-        <h1>Historias de las comunidades agrícolas del Valle de Pájaro</h1>
-        
-        <div id="home_image_container">
-            <div class="img_desktop_container"></div>
-            <img class="img_mobile" src="{% static '/images/homepage_long.jpeg' %}">
-            <p id="credit">“Peering Through” Foto de Ángela Higuera</p>
-        </div>
+<div class="home_container">
+    <div id="home_image_container">
+        <div class="img_desktop_container"></div>
+        <img class="img_mobile" src="{% static '/images/homepage_long.jpeg' %}">
+        <p id="credit">“Peering Through” Foto de Ángela Higuera</p>
     </div>
+    <div id="peering_text">
+        <p>
+            La mayoría de los campamentos laborales de Watsonville, que fueron una fuente vital de vivienda para los trabajadores agrícolas, se cerraron oficialmente en la década de 1970 con el fin del programa bracero. Pero muchas de las comunidades que nacieron de estos campamentos todavía existen y continúan dando forma al paisaje del Valle de Pájaro.
+        </p>
+        <p>
+            El nombre Palabra Campesina muestra el poder de compartir testimonios para preservar la memoria, la historia y la verdad de nuestra región. Nos recuerda que, aunque las comunidades de trabajadores agrícolas a veces viven aisladas, no deberían ser invisibles.
+        </p>
+    </div>
+</div>
 </body>
 <script src="{% static 'scripts/inicio.js' %}"></script>
-{% endblock content %}
+<script src="{% static 'scripts/navbar.js' %}"></script>
+</html>

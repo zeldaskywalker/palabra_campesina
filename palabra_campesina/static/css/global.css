@@ -5,6 +5,7 @@
 @import url("navbar.css");
 @import url("palabra.css");
 @import url("sobre.css");
+@import url("footer.css");
 
 :root {
 	--palabra-green: #d3e399;
@@ -21,6 +22,7 @@ body {
     padding: 1.6em;
     margin-left: 11%;
     margin-right: 11%;
+    padding-bottom: 0;
 }
 
 @media (max-width: 680px) {

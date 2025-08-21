@@ -10,10 +10,10 @@
 
 #credit {
     padding-top: 1vh;
-    padding-bottom: 1vh;
     text-align: right;
     font-size: 1.2em;
     font-style: italic;
+    width: 91%;
 }
 
 #gallery_items {
@@ -25,13 +25,16 @@
 }
 
 #home_image_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
 /* home image on desktop */
 .img_desktop_container {
-    width: 100%;
-    aspect-ratio: 4/3;
+    width: 91%;
+    aspect-ratio: 4 / 3;
     background-image: url(/static/images/peering_through_homepage_wide.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -49,8 +52,25 @@
     display: none;
 }
 
+#peering_text {
+    width: 100%;
+    display: none;
+}
+
+#peering_text p {
+    font-size: 1.2em;
+}
+
 @media (max-width: 680px) {
     .img_mobile {
+        display: block;
+    }
+
+    #credit {
+        width: 100%;
+    }
+
+    #peering_text {
         display: block;
     }
 

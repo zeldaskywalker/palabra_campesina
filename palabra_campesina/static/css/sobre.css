@@ -30,7 +30,17 @@
 
 /* images in sobre page */
 #alex_img {
-    width: 100%;
+    width: 90%;
+}
+
+#alex_img_caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#alex_img_caption figcaption {
+    width: 90%;
 }
 
 #angela_img {

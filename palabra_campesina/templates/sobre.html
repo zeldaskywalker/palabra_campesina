@@ -1,96 +1,93 @@
+{% load static %}
+{% include "header.html" %}
+
 <head>
     <title>SOBRE</title>
 </head>
+<div class="sobre_container">
+    <div>
+        <h1>SOBRE PALABRA</h1>
+        <p>
+            <i>Palabra Campesina</i> es un proyecto comunitario que honra las vidas, voces, e historias de las comunidades campesinas de Watsonville. Basado en la tradición oral, este proyecto recoge testimonios de personas que viven o han vivido en campamentos de trabajo, viviendas migrantes, o vecindarios agrícolas en el Valle de Pájaro.
+        </p>
+        <p>
+            Estas comunidades, formadas a lo largo de generaciones de migración y trabajo en los campos agrícolas de California, han sido frecuentemente ignoradas por los medios y los registros oficiales. <i>Palabra Campesina</i> busca contrarrestar esa invisibilidad mediante la creación de un archivo vivo de testimonios—historias de migración, lucha, alegría, familia, resistencia y vida cotidiana.
+        </p>
+        <p>
+            A través de eventos de narración en vivo, entrevistas de historia oral, fotografía y encuentros comunitarios, Palabra Campesina genera espacios donde las voces campesinas pueden ser escuchadas y honradas en sus propios términos. 
+        </p>
+        <p>
+            El proyecto nace de la convicción de que contar nuestras historias no solo preserva la cultura, sino que también sana, visibiliza y conecta a las generaciones. También resalta la presencia continua de los campamentos agrícolas en nuestra región—muchos de los cuales siguen activos hoy en día y funcionan como viviendas permanentes, a pesar de haber sido concebidos como albergues estacionales.
+        </p>
+        <p>
+            Te invitamos a conocer el corazón de las comunidades agrícolas de Watsonville y a escuchar las historias de las personas cuyo trabajo nos alimenta a todos.
+        </p>
+    </div>
 
-{% extends "base.html" %}
-{% block content %}
-{% load static %}
-<body>
-    <div class="sobre_container">
-        <div>
-            <h1>SOBRE PALABRA</h1>
-            <p>
-                <i>Palabra Campesina</i> es un proyecto comunitario que honra las vidas, voces, e historias de las comunidades campesinas de Watsonville. Basado en la tradición oral, este proyecto recoge testimonios de personas que viven o han vivido en campamentos de trabajo, viviendas migrantes, o vecindarios agrícolas en el Valle de Pájaro.
-            </p>
-            <p>
-                Estas comunidades, formadas a lo largo de generaciones de migración y trabajo en los campos agrícolas de California, han sido frecuentemente ignoradas por los medios y los registros oficiales. <i>Palabra Campesina</i> busca contrarrestar esa invisibilidad mediante la creación de un archivo vivo de testimonios—historias de migración, lucha, alegría, familia, resistencia y vida cotidiana.
-            </p>
-            <p>
-                A través de eventos de narración en vivo, entrevistas de historia oral, fotografía y encuentros comunitarios, Palabra Campesina genera espacios donde las voces campesinas pueden ser escuchadas y honradas en sus propios términos. 
-            </p>
-            <p>
-                El proyecto nace de la convicción de que contar nuestras historias no solo preserva la cultura, sino que también sana, visibiliza y conecta a las generaciones. También resalta la presencia continua de los campamentos agrícolas en nuestra región—muchos de los cuales siguen activos hoy en día y funcionan como viviendas permanentes, a pesar de haber sido concebidos como albergues estacionales.
-            </p>
-            <p>
-                Te invitamos a conocer el corazón de las comunidades agrícolas de Watsonville y a escuchar las historias de las personas cuyo trabajo nos alimenta a todos.
-            </p>
-        </div>
+    <br>
+    
+    <div>
+        <h1>LA CREADORA</h1>
+        <figure id="alex_img_caption">
+            <img id="alex_img" src="{% static '/images/alex.jpeg' %}">
+            <figcaption>“Alex en el manzanero” Foto de Ángela Higuera</figcaption>
+        </figure>
 
-        <br>
-        
-        <div>
-            <h1>LA CREADORA</h1>
-            <figure>
-                <img id="alex_img" src="{% static '/images/alex.jpeg' %}">
-                <figcaption>“Alex en el manzanero” Foto de Ángela Higuera</figcaption>
-            </figure>
+        <p>
+            Alex Rocha-Álvarez es hija de Jardines del Valle, previamente conocido como el campo Murphy. De niña, ella lo conocía como “el campo del hoyo” porque desde la calle, su hogar se veía como si estuviera atrapado dentro de un hueco en la tierra. Creado cerca del 1920 para ser campo de trabajadores agrícolas, su hogar siempre le ha pertenecido a los campesinos.
+        </p>
 
-            <p>
-                Alex Rocha-Álvarez es hija de Jardines del Valle, previamente conocido como el campo Murphy. De niña, ella lo conocía como “el campo del hoyo” porque desde la calle, su hogar se veía como si estuviera atrapado dentro de un hueco en la tierra. Creado cerca del 1920 para ser campo de trabajadores agrícolas, su hogar siempre le ha pertenecido a los campesinos.
-            </p>
+        <p>
+            En el Valle de Pájaro, hay más campos como el de ella, escondidos entre files de fresas y caminos rurales. Si no te acercas para mirar, estos campos son casi invisibles, y las historias de las personas que viven ahí también.
+        </p>
 
-            <p>
-                En el Valle de Pájaro, hay más campos como el de ella, escondidos entre files de fresas y caminos rurales. Si no te acercas para mirar, estos campos son casi invisibles, y las historias de las personas que viven ahí también.
-            </p>
+        <p>
+            Pero Alex cree que todos tenemos algo que aprender de nuestras comunidades agrícolas; ella lo sabe íntimamente porque esta comunidad la crió. Fue en el campo del hoyo que aprendió que no hay corazón como el de campesino. Palabra Campesina es un proyecto que nació de su conocimiento que — si tenemos la sabiduría para escuchar — todos tenemos algo que aprender de nuestros campesinos.
+        </p>
+        <p>
+            Alex es escritora, periodista cultural, y trabajadora comunitaria. Como estudiante universitaria de primera generación, se graduó con honores de la Universidad de Yale, donde profundizó en los temas de trabajo, migración y resiliencia tanto en sus cursos como en proyectos independientes.
+        </p>
 
-            <p>
-                Pero Alex cree que todos tenemos algo que aprender de nuestras comunidades agrícolas; ella lo sabe íntimamente porque esta comunidad la crió. Fue en el campo del hoyo que aprendió que no hay corazón como el de campesino. Palabra Campesina es un proyecto que nació de su conocimiento que — si tenemos la sabiduría para escuchar — todos tenemos algo que aprender de nuestros campesinos.
-            </p>
-            <p>
-                Alex es escritora, periodista cultural, y trabajadora comunitaria. Como estudiante universitaria de primera generación, se graduó con honores de la Universidad de Yale, donde profundizó en los temas de trabajo, migración y resiliencia tanto en sus cursos como en proyectos independientes.
-            </p>
+        <p>
+            Actualmente, Alex es estudiante de doctorado en la Universidad de California, Berkeley, donde continuará su compromiso con las comunidades campesinas del Valle del Pájaro. Su investigación explora el impacto de las políticas agrícolas y de vivienda desde el desmantelamiento oficial de los campos laborales en los años 70 hasta el presente. A través de su trabajo académico, busca rescatar historias ocultas de adaptación y transformación, y usar ese conocimiento para ayudar a su comunidad.
+        </p>
+    </div>
 
-            <p>
-                Actualmente, Alex es estudiante de doctorado en la Universidad de California, Berkeley, donde continuará su compromiso con las comunidades campesinas del Valle del Pájaro. Su investigación explora el impacto de las políticas agrícolas y de vivienda desde el desmantelamiento oficial de los campos laborales en los años 70 hasta el presente. A través de su trabajo académico, busca rescatar historias ocultas de adaptación y transformación, y usar ese conocimiento para ayudar a su comunidad.
-            </p>
-        </div>
+    <br>
 
-        <br>
+    <div>
+        <h1>COLABORADORES</h1>
 
-        <div>
-            <h1>COLABORADORES</h1>
-
-            <div id="sobre_angela">
-                <h2>Fotógrafa: Ángela Higuera</i></h2>
-                <div>
-                    <img id="angela_img" src="{% static '/images/angela.jpeg' %}">
-                    <p>
-                        Ambos de los padres de Ángela provienen de familias campesinas en México, pero al emigrar a los Estados Unidos, esas raíces agrícolas dejaron de ser un tema común en las conversaciones familiares. Para Ángela, reconectar con esa herencia ha sido una parte esencial de su camino personal y creativo. Como la fotógrafa principal de Palabra Campesina, Ángela utiliza la fotografía como herramienta para explorar la relación entre la tierra, la comida, y la justicia para las comunidades agrícolas. Ángela se graduó de la Universidad de Yale en 2023 con una licenciatura en Estudios Americanos. Actualmente, trabaja en educación extracurricular, acompañando a jóvenes en su desarrollo.
-                    </p>
-                </div>
-            </div>
-
-            <br>
-
-            <div id="sobre_zelda">
-                <h2>Desarrollador web: Zelda Montes</h2>
-                <div>
-                    <img id="zelda_img" src="{% static '/images/zelda.png' %}">
-                    <p>
-                        Zelda Montes es organizadore laboral y ingeniere digital con compromiso de crear proyectos digitales al servicio de la comunidad. Actualmente cursa una maestría en Humanidades Digitales en CUNY, donde investiga cómo los archivos digitales pueden convertirse en espacios de resistencia y memoria colectiva. Ha trabajado en proyectos como <i><a href="https://morethansurviving.org/">More than Surviving</a></i>, que recupera la agencia política de la tribu Wampanoag, y el <i><a href="https://notechforapartheidmemory.com/">2023–2024 Google NYC Digital Memory Archive</a></i>, que documenta la organización laboral en lucha contra la complicidad de la industria tecnológica en el genocidio contra el pueblo Palestino.
-                    </p>
-                </div>
-            </div>
-            
-            <br>
-
-            <div id="sobre_eda">
-                <h2>Diseñadora gráfica: Eda Uzunlar</h2>
+        <div id="sobre_angela">
+            <h2>Fotógrafa: Ángela Higuera</i></h2>
+            <div>
+                <img id="angela_img" src="{% static '/images/angela.jpeg' %}">
                 <p>
-                    Eda Uzunlar es periodista y diseñadora gráfica, originaria de Dakota del Sur y estadounidense de primera generación con raíces turcas. Ella crea arte y diseño para contar historias accesibles sobre cultura y comunidad. Encuentra más sobre su trabajo en <a href="euzunlar.com">euzunlar.com</a>.
+                    Ambos de los padres de Ángela provienen de familias campesinas en México, pero al emigrar a los Estados Unidos, esas raíces agrícolas dejaron de ser un tema común en las conversaciones familiares. Para Ángela, reconectar con esa herencia ha sido una parte esencial de su camino personal y creativo. Como la fotógrafa principal de Palabra Campesina, Ángela utiliza la fotografía como herramienta para explorar la relación entre la tierra, la comida, y la justicia para las comunidades agrícolas. Ángela se graduó de la Universidad de Yale en 2023 con una licenciatura en Estudios Americanos. Actualmente, trabaja en educación extracurricular, acompañando a jóvenes en su desarrollo.
                 </p>
             </div>
         </div>
+
+        <br>
+
+        <div id="sobre_zelda">
+            <h2>Desarrollador web: Zelda Montes</h2>
+            <div>
+                <img id="zelda_img" src="{% static '/images/zelda.png' %}">
+                <p>
+                    Zelda Montes es organizadore laboral y ingeniere digital con compromiso de crear proyectos digitales al servicio de la comunidad. Actualmente cursa una maestría en Humanidades Digitales en CUNY, donde investiga cómo los archivos digitales pueden convertirse en espacios de resistencia y memoria colectiva. Ha trabajado en proyectos como <i><a href="https://morethansurviving.org/">More than Surviving</a></i>, que recupera la agencia política de la tribu Wampanoag, y el <i><a href="https://notechforapartheidmemory.com/">2023–2024 Google NYC Digital Memory Archive</a></i>, que documenta la organización laboral en lucha contra la complicidad de la industria tecnológica en el genocidio contra el pueblo Palestino.
+                </p>
+            </div>
+        </div>
+        
+        <br>
+
+        <div id="sobre_eda">
+            <h2>Diseñadora gráfica: Eda Uzunlar</h2>
+            <p>
+                Eda Uzunlar es periodista y diseñadora gráfica, originaria de Dakota del Sur y estadounidense de primera generación con raíces turcas. Ella crea arte y diseño para contar historias accesibles sobre cultura y comunidad. Encuentra más sobre su trabajo en <a href="euzunlar.com">euzunlar.com</a>.
+            </p>
+        </div>
     </div>
-</body>
-{% endblock content %}
+</div>
+{% include "footer.html" %}
