@@ -33,7 +33,7 @@
 
 /* home image on desktop */
 .img_desktop_container {
-    width: 91%;
+    width: 100%;
     aspect-ratio: 4 / 3;
     background-image: url(/static/images/peering_through_homepage_wide.jpg);
     background-repeat: no-repeat;
