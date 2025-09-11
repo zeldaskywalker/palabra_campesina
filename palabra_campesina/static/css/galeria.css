@@ -59,7 +59,7 @@
 .quote_overlay p {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 1.8rem;
 }
 
 .quote_overlay:hover {
@@ -119,13 +119,13 @@
 
 #galeria_quote_wide {
     text-align: center;
-    font-size: 2em;
+    font-size: clamp(0.9em, 2.3vw, 1.9em);
     font-weight: bold;
 }
 
 #galeria_quote_long {
     text-align: center;
-    font-size: 1.5em;
+    font-size: clamp(0.7em, 1.7vw, 1.3em);
     font-weight: bold;
 }
 
