@@ -1,11 +1,12 @@
 function revealImageWithText() {
     const img_desktop_container = document.querySelector('.img_desktop_container');
-    img_desktop_container.style.backgroundImage = "url(/static/images/peering_through_with_text.png)";
+    img_desktop_container.style.backgroundImage = imgDesktopTextUrl;
+    
 }
 
 function defaultHomeImageNoText() {
     const img_desktop_container = document.querySelector('.img_desktop_container');
-    img_desktop_container.style.backgroundImage = "url(/static/images/peering_through_homepage_wide.jpg)";
+    img_desktop_container.style.backgroundImage = imgDesktopNoTextUrl;
 }
 
 const img_desktop_container = document.querySelector('.img_desktop_container');

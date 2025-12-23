@@ -1,11 +1,11 @@
 /* global.css */
-@import url("galeria.css");
-@import url("historias.css");
-@import url("inicio.css");
-@import url("navbar.css");
-@import url("palabra.css");
-@import url("sobre.css");
-@import url("footer.css");
+@import url("../css/galeria.css");
+@import url("../css/historias.css");
+@import url("../css/inicio.css");
+@import url("../css/navbar.css");
+@import url("../css/palabra.css");
+@import url("../css/sobre.css");
+@import url("../css/footer.css");
 
 :root {
 	--palabra-green: #d3e399;
@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: scribe;
-  src: url(/static/fonts/american-scribe-regular.ttf);
+  src: url(../fonts/american-scribe-regular.ttf);
 }
 
 body {
