@@ -5,7 +5,6 @@
     <title>GALERÍA</title>
 </head>
     <div class="galeria_container">
-        <!-- <h1>GALERÍA</h1> -->
         <div id="loading">
             <h1>Un momento mientras recuperamos las imágenes...</h1>
         </div>
@@ -17,13 +16,13 @@
                         <a href="/galeria/{{d.id}}"><img class="galeria_image" src="{% with d.gallery_image|first as first_file %}{{ first_file.url }}{% endwith %}" alt="{{d.title}}"></a>
                         <a href="/galeria/{{d.id}}">
                             <div class="quote_overlay">
-                            <p>
-                                {% if d.description %}
-                                {{d.description|truncatewords:7|slice:"-2"}}...”
-                                {% else %}
-                                {% endif %}
-                            </p>
-                        </div>
+                                <p>
+                                    {% if d.description %}
+                                    {{d.description|truncatewords:7|slice:"-2"}}...”
+                                    {% else %}
+                                    {% endif %}
+                                </p>
+                            </div>
                         </a>
                     </div>
                     <div id="in_gallery_title">
