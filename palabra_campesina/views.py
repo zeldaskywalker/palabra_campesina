@@ -24,13 +24,13 @@ class GaleriaImageView(generic.TemplateView):
         context = super(GaleriaImageView, self).get_context_data(**kwargs)
         context['data'] = baserow.get_gallery_image_singular(context['row_id'])
         return context['data']
-    
-class HistoriasView(generic.ListView):
-    template_name = 'historias.html'
+  
+class TestimoniosView(generic.ListView):
+    template_name = 'testimonios.html'
     data = baserow.get_stories_all()
 
     def get_context_data(self, **kwargs):
-        context = super(HistoriasView, self).get_context_data(**kwargs)
+        context = super(TestimoniosView, self).get_context_data(**kwargs)
         context['data'] = self.data
         return context
 
@@ -44,6 +44,6 @@ class HistoriasView(generic.ListView):
 #         context = super(StoryView, self).get_context_data(**kwargs)
 #         context['data'] = baserow.get_story(context['row_id'])
 #         return context['data']
-    
+ 
 class SobreView(generic.TemplateView):
     template_name = 'sobre.html'

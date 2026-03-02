@@ -1,11 +1,12 @@
 /* global.css */
 @import url("../css/galeria.css");
-@import url("../css/historias.css");
+@import url("../css/testimonios.css");
 @import url("../css/inicio.css");
 @import url("../css/navbar.css");
 @import url("../css/palabra.css");
 @import url("../css/sobre.css");
 @import url("../css/footer.css");
+@import url("../css/password.css");
 
 :root {
 	--palabra-green: #d3e399;

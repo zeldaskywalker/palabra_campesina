@@ -6,12 +6,12 @@
     margin-bottom: 15px;
 }
 
-.historias_container {
+.testimonios_container {
     padding-top: 0.8em;
 }
 
 @media (max-width: 680px) {
-    .historias_container {
+    .testimonios_container {
         padding-top: 0;
     }
 }
