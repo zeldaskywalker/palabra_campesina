@@ -6,10 +6,10 @@
         <link rel="stylesheet" href="{% static 'css/global.css' %}">
         <link rel="icon" type="image/png" href="{% static '/images/favicon.png' %}"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        {% if request.session.language == 'es' %}
-            <title>BIENVENIDA</title>
-        {% elif request.session.language == 'en' %}
+        {% if request.session.language == 'en' %}
             <title>WELCOME</title>
+        {% else %}
+            <title>BIENVENIDA</title>
         {% endif %}
     </head>
 
@@ -27,9 +27,9 @@
                         <option value="en" {% if request.session.language == "es" %} selected{% endif %}>English</option>
                     </select>
                     <button type="submit">
-                        {% if request.session.language == 'es' %}
+                        {% if request.session.language == 'en' %}
                         Choose language
-                        {% elif request.session.language == 'en' %}
+                        {% else %}
                         Escoje idioma
                         {% endif %}
                     </button>
@@ -39,8 +39,8 @@
             <form method="post">
                 {% csrf_token %}
                 <div class="form-container">
-                    <input type="text" id="password" name="password" placeholder="{% if request.session.language == 'es' %}Contraseña{% else %}Password{% endif %}">
-                    <button type="submit">{% if request.session.language == 'es' %}Entrar{% elif request.session.language == 'en' %}Enter{% endif %}</button>
+                    <input type="text" id="password" name="password" placeholder="{% if request.session.language == 'en' %}Password{% else %}Contraseña{% endif %}">
+                    <button type="submit">{% if request.session.language == 'en' %}Enter{% else %}Entrar{% endif %}</button>
                 </div>
             </form>
         </div>
@@ -48,10 +48,10 @@
 
     <div style="text-align: center;">
         <p id="password_info">
-            {% if request.session.language == 'es' %}
-            Sobre | Solicitar Acceso
-            {% elif request.session.language == 'en' %}
+            {% if request.session.language == 'en' %}
             About | Request Access
+            {% else %}
+            Sobre | Solicitar Acceso
             {% endif %}
         </p>
     </div>
@@ -59,10 +59,10 @@
     <div style="text-align: center;">
         {% if messages %}
             <div>
-                {% if request.session.language == 'es' %}
-                Contraseña incorrecta. Por favor inténtalo de nuevo, o solicita acceso.
-                {% elif request.session.language == 'en' %}
+                {% if request.session.language == 'en' %}
                 Incorrect password. Please try again, or request access.
+                {% else %}
+                Contraseña incorrecta. Por favor inténtalo de nuevo, o solicita acceso.
                 {% endif %}
             </div>
         {% endif %}
