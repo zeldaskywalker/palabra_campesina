@@ -45,3 +45,22 @@ nav {
     color: green;
     text-decoration: underline;
 }
+
+
+#translate {
+    width: 1.2em;
+}
+
+#translate_button {
+    font-size: 0.8em;
+    width: auto;
+    background-color: var(--palabra-green);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#translate_button:hover {
+    color: green;
+}

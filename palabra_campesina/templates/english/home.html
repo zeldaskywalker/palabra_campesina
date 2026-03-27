@@ -1,0 +1,31 @@
+{% load static %}
+{% include "english/header.html" %}
+
+<div class="home_container">
+    <div id="home_image_container">
+        <div class="img_desktop_container">
+            <img class="img_desktop" src="{% static '/images/peering_through_homepage_wide.jpg' %}" />
+            <div class="quote_overlay" style="flex-direction: column;">
+                <p id="homepage_quote">
+                    Most of Watsonville's labor camps, which were a vital source of housing for agricultural workers, officially closed in the 1970s with the end of the Bracero Program. But many of the communities that emerged from these camps still exist and continue to shape the landscape of the Pájaro Valley.
+                </p>
+                <p id="homepage_quote">
+                    The name Palabra Campesina demonstrates the power of sharing testimonies to preserve the memory, history, and truth of our region. It reminds us that, although farmworker communities sometimes live in isolation, they should not be invisible.
+                </p>
+        </div>
+        </div>
+        <img class="img_mobile" src="{% static '/images/homepage_long.jpeg' %}" />
+        <p id="credit">“Peering Through” Photo by Ángela Higuera</p>
+    </div>
+    <div id="peering_text">
+        <p>
+            Most of Watsonville's labor camps, which were a vital source of housing for agricultural workers, officially closed in the 1970s with the end of the Bracero Program. But many of the communities that emerged from these camps still exist and continue to shape the landscape of the Pájaro Valley.
+        </p>
+        <p>
+            The name Palabra Campesina demonstrates the power of sharing testimonies to preserve the memory, history, and truth of our region. It reminds us that, although farmworker communities sometimes live in isolation, they should not be invisible.
+        </p>
+    </div>
+</div>
+</body>
+<script src="{% static '/scripts/navbar.js' %}"></script>
+{% include "english/footer.html" %}

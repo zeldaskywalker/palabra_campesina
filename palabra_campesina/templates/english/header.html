@@ -5,11 +5,12 @@
     <link rel="stylesheet" href="{% static 'css/global.css' %}">
     <link rel="icon" type="image/png" href="{% static '/images/favicon.png' %}"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
 </head>
 <body>
     <header>
         <div style="text-align: center;">
-            <a href="/"><img id="logo" src="{% static '/images/logo.png' %}" alt="Palabra Campesina"></a>
+            <a href="/home"><img id="logo" src="{% static '/images/logo.png' %}" alt="Palabra Campesina"></a>
         </div>
         <nav>
             <button id="nav-button">
@@ -19,16 +20,22 @@
                 <div id="navbar">
                     <ol id="nav-items">
                         <li class="nav-item">
-                            <a href="/inicio">INICIO</a>
+                            <a href="/home">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/sobre">SOBRE</a>
+                            <a href="/about">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/galeria">GALERÍA</a>
+                            <a href="/gallery">GALLERY</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/testimonios">TESTIMONIOS</a>
+                            <a href="/testimonies">TESTIMONIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ redirect }}" id="translate_button">
+                                <img src="{% static '/images/translate_icon.png' %}" alt="Translate icon" id="translate"/>
+                                ESPAÑOL
+                            </a>
                         </li>
                     </ol>
                 </div>

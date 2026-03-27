@@ -1,10 +1,7 @@
 import requests
 import os
 
-# TODO: UPDATE AUTHORIZATION TOKEN FOR EACH METHOD
-
-
-def get_stories_all():
+def get_testimonios_all():
     AUTHORIZATION_TOKEN = os.getenv("AUTHORIZATION_TOKEN")
     AUTH_STRING = "Token " + AUTHORIZATION_TOKEN
     data = requests.get(
@@ -15,7 +12,7 @@ def get_stories_all():
 
     return data["results"]
 
-def get_story(row_id):
+def get_testimonio(row_id):
     AUTHORIZATION_TOKEN = os.getenv("AUTHORIZATION_TOKEN")
     AUTH_STRING = "Token " + AUTHORIZATION_TOKEN
     request_string = "https://api.baserow.io/api/database/rows/table/392019/" + str(row_id) + "/?user_field_names=true"
@@ -26,7 +23,6 @@ def get_story(row_id):
             }).json()
 
     return data
-
 
 def get_gallery_all_images():
     AUTHORIZATION_TOKEN = os.getenv("AUTHORIZATION_TOKEN")

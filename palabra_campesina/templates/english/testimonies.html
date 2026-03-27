@@ -1,0 +1,27 @@
+{% load static %}
+{% include "english/header.html" %}
+
+<div class="testimonios_container">
+    <div id="testimonios">
+        <div class="row justify-content-around">
+        {% for d in data %}
+            <div class="singular_testimonios_in_row">
+                <div class="gallery-img-div">
+                    <a href="/testimony/{{d.id}}"><img class="testimonio_image" src="{% with d.interview_thumbnail|first as first_file %}{{ first_file.url }}{% endwith %}" alt="{{d.title}}"></a>
+                </div>
+                <div id="testimonios_title">
+                    <h2><i><a href="/testimony/{{d.id}}">{{d.title}}</a></i></h2>
+                </div>
+                <div id="testimonios_description">
+                    <p>
+                        {{d.short_description_english}}
+                    </p>
+                </div>
+            </div>
+            {% if forloop.counter|divisibleby:3 %}</div><br><div class="row justify-content-around">{% endif %}
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% include "english/footer.html" %}

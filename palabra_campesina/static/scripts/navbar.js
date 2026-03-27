@@ -18,7 +18,7 @@ function handleMobileOrResize() {
   const navbar_items = document.getElementById("nav-items");
   const navbar_dropdown_button = document.getElementById("nav-button");
 
-  if (window.innerWidth < 680) {
+  if (window.innerWidth < 950) {
     // if the screen IS NOT wide enough
 
     // show the navbar dropdown button
@@ -27,7 +27,7 @@ function handleMobileOrResize() {
     // hide the navbar items
     navbar_items.style.display = 'none';
 
-  } else if (window.innerWidth >= 680) {
+  } else if (window.innerWidth >= 950) {
     // if the screen IS wide enough
 
     // don't show navbar dropdown button

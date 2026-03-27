@@ -1,0 +1,31 @@
+{% load static %}
+{% include "english/header.html" %}
+
+<div class="testimonios_container">
+
+    <div class="video_container">
+        <iframe class="video_iframe"
+                src="{{data.interview_link}}"
+                title={{data.title}}
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+        </iframe>
+    </div>
+
+    <div id="testimonio_title">
+        <h1>{{data.title}}</h1>
+    </div>
+
+    <div id="testimonio_description">
+        <p>
+            {{data.long_description_english}}
+        </p>
+
+        <p class="link">
+            <a href="{% with data.transcript_spanish|first as first_file %}{{ first_file.url }}{% endwith %}" target="_blank">See transcript PDF &nearr;</a>
+        </p>
+    </div>
+</div>
+{% include "english/footer.html" %}
