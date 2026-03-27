@@ -23,14 +23,14 @@
                 <div class="form-container">
                     <input name="language_change" type="hidden">
                     <select name="language">
-                        <option value="es" {% if request.session.language == "en" %} selected{% endif %}>Español</option>
-                        <option value="en" {% if request.session.language == "es" %} selected{% endif %}>English</option>
+                        <option value="es" {% if request.session.language == "es" %} selected{% endif %}>Español</option>
+                        <option value="en" {% if request.session.language == "en" %} selected{% endif %}>English</option>
                     </select>
                     <button type="submit">
                         {% if request.session.language == 'en' %}
-                        Choose language
-                        {% else %}
                         Escoje idioma
+                        {% else %}
+                        Choose language
                         {% endif %}
                     </button>
                 </div>
