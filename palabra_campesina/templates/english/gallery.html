@@ -14,8 +14,8 @@
                     <a href="/gallery/{{d.id}}">
                         <div class="quote_overlay">
                             <p>
-                                {% if d.description %}
-                                {{d.description|truncatewords:7|slice:"-2"}}...”
+                                {% if d.description_english %}
+                                {{d.description_english|truncatewords:7|slice:"-2"}}...”
                                 {% else %}
                                 {% endif %}
                             </p>

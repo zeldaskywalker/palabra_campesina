@@ -21,10 +21,10 @@
         <div class="{{data.style}}" id="galeria_img_wrapper_{{data.style}}">
             <img id="solo_galeria_image" fetchpriority="high" src="{% with data.image|first as first_file %}{{ first_file.url }}{% endwith %}" alt="{{data.title}}">
             <div class="quote_overlay" id="galeria_quote_{{data.style}}">
-                {{data.description}}
+                {{data.description_spanish}}
             </div>
         </div>
-        <figcaption class="{{data.style}}"><i>{{data.credit}}</i></figcaption>
+        <figcaption class="{{data.style}}"><i>{{data.credit_spanish}}</i></figcaption>
     </figure>
 </div>
 <script src="{% static '/scripts/solo_galeria.js' %}"></script>
