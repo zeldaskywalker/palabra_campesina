@@ -13,58 +13,60 @@
         {% endif %}
     </head>
 
-    <div style="text-align: center;">
-        <img id="logo-welcome" src="{% static '/images/logo.png' %}" alt="Palabra Campesina">
-        <br>
-        <br>
-        <div id="password-forms">
-            <form method="post">
-                {% csrf_token %}
-                <div class="form-container">
-                    <input name="language_change" type="hidden">
-                    <select name="language">
-                        <option value="es" {% if request.session.language == "es" %} selected{% endif %}>Español</option>
-                        <option value="en" {% if request.session.language == "en" %} selected{% endif %}>English</option>
-                    </select>
-                    <button type="submit">
-                        {% if request.session.language == 'en' %}
-                        Escoje idioma
-                        {% else %}
-                        Choose language
-                        {% endif %}
-                    </button>
-                </div>
-            </form>
+    <body>
+        <div style="text-align: center;">
+            <img id="logo-welcome" src="{% static '/images/logo.png' %}" alt="Palabra Campesina">
+            <br>
+            <br>
+            <div id="password-forms">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-container">
+                        <input name="language_change" type="hidden">
+                        <select name="language">
+                            <option value="es" {% if request.session.language == "en" %} selected{% endif %}>Español</option>
+                            <option value="en" {% if request.session.language == "es" %} selected{% endif %}>English</option>
+                        </select>
+                        <button type="submit">
+                            {% if request.session.language == 'en' %}
+                            Escoje idioma
+                            {% else %}
+                            Choose language
+                            {% endif %}
+                        </button>
+                    </div>
+                </form>
 
-            <form method="post">
-                {% csrf_token %}
-                <div class="form-container">
-                    <input type="text" id="password" name="password" placeholder="{% if request.session.language == 'en' %}Password{% else %}Contraseña{% endif %}">
-                    <button type="submit">{% if request.session.language == 'en' %}Enter{% else %}Entrar{% endif %}</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div style="text-align: center;">
-        <p id="password_info">
-            {% if request.session.language == 'en' %}
-            About | Request Access
-            {% else %}
-            Sobre | Solicitar Acceso
-            {% endif %}
-        </p>
-    </div>
-
-    <div style="text-align: center;">
-        {% if messages %}
-            <div>
-                {% if request.session.language == 'en' %}
-                Incorrect password. Please try again, or request access.
-                {% else %}
-                Contraseña incorrecta. Por favor inténtalo de nuevo, o solicita acceso.
-                {% endif %}
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-container">
+                        <input type="text" id="password" name="password" placeholder="{% if request.session.language == 'en' %}Password{% else %}Contraseña{% endif %}">
+                        <button type="submit">{% if request.session.language == 'en' %}Enter{% else %}Entrar{% endif %}</button>
+                    </div>
+                </form>
             </div>
-        {% endif %}
-    </div>
+        </div>
+
+        <div style="text-align: center;">
+            <p id="password_info">
+                {% if request.session.language == 'en' %}
+                About | <a href="/access/" target="_blank">Request Access &nearr;</a>
+                {% else %}
+                Sobre | <a href="/acceso/" target="_blank">Solicitar Acceso &nearr;</a>
+                {% endif %}
+            </p>
+        </div>
+
+        <div style="text-align: center;">
+            {% if messages %}
+                <div>
+                    {% if request.session.language == 'en' %}
+                    Incorrect password. Please try again, or request access.
+                    {% else %}
+                    Contraseña incorrecta. Por favor inténtalo de nuevo, o solicita acceso.
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    </body>
 </html>

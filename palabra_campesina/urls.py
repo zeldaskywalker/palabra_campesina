@@ -12,6 +12,8 @@ urlpatterns = [
     path('testimonios/', views.TestimoniosView.as_view(), name='testimonios'),
     path('testimonio/<int:row_id>', views.TestimonioView.as_view(), name='testimonio'),
     path('sobre/', views.SobreView.as_view(), name='sobre'),
+    path("acceso/", views.AccesoView.as_view(), name="acceso"),
+    path("gracias/", views.GraciasView.as_view(), name="gracias"),
 
     # English
     path('home/', views.HomeView.as_view(), name='home'),
@@ -20,4 +22,6 @@ urlpatterns = [
     path('testimonies/', views.TestimoniesView.as_view(), name='testimonies'),
     path('testimony/<int:row_id>', views.TestimonyView.as_view(), name='testimony'),
     path('about/', views.AboutView.as_view(), name='about'),
+    path("access/", views.AccessView.as_view(), name="access"),
+    path("thanks/", views.ThanksView.as_view(), name="thanks"),
 ]

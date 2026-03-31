@@ -1,11 +1,16 @@
 from django.views import generic
 from django.conf import settings
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+
+from .access_form import AccessForm
+from .access_form import AccesoForm
 
 from . import baserow
 
-# Español
+
 def contraseña_or_password_view(request):
 
     language = request.session.get('language', 'es')
@@ -43,6 +48,7 @@ def contraseña_or_password_view(request):
 
     return render(request, 'contraseña.html')
 
+# Español
 class InicioView(generic.TemplateView):
     template_name = 'español/inicio.html'
 
@@ -129,6 +135,60 @@ class SobreView(generic.TemplateView):
         context['redirect'] = '/about'
         context['title'] = 'SOBRE'
         return context
+
+class GraciasView(generic.TemplateView):
+    template_name = 'español/gracias.html'
+
+class AccesoView(generic.FormView):
+    form_class = AccesoForm
+    template_name = 'español/acceso.html'
+
+    def get_success_url(self):
+        return reverse("gracias")
+
+    def get_context_data(self, **kwargs):
+        self.request.session['language'] = 'es'
+
+        context = super().get_context_data(**kwargs)
+        return context
+    
+    def form_valid(self, form):
+        nombre = form.cleaned_data.get("nombre")
+        correo_electrónico = form.cleaned_data.get("correo_electrónico")
+        organización_o_afiliación = form.cleaned_data.get("organización_o_afiliación")
+        mensaje = form.cleaned_data.get("mensaje")
+
+        html_content = render_to_string('email.html',
+                                        {'name': nombre,
+                                         'email': correo_electrónico,
+                                         'org_or_affiliation': organización_o_afiliación,
+                                         'message': mensaje})
+
+        full_message = f"""
+            The following details were provided with this request:
+            ________________________
+
+
+            NAME:
+            {nombre}
+
+            EMAIL ADDRESS:
+            {correo_electrónico}
+
+            ORGANIZATION OR AFFILIATION:
+            {correo_electrónico}
+
+            Why are you requesting access?:
+            {mensaje}
+            """
+        send_mail(
+            subject="Access Requested to Palabra Campesina",
+            message=full_message,
+            from_email=settings.EMAIL_HOST_USER,
+            recipient_list=settings.EMAIL_HOST_USER,
+            html_message=html_content
+        )
+        return super().form_valid(form)
 
 # English
 class HomeView(generic.TemplateView):
@@ -217,3 +277,57 @@ class AboutView(generic.TemplateView):
         context['redirect'] = '/sobre'
         context['title'] = 'ABOUT'
         return context
+
+class ThanksView(generic.TemplateView):
+    template_name = 'english/thanks.html'
+
+class AccessView(generic.FormView):
+    form_class = AccessForm
+    template_name = 'english/access.html'
+
+    def get_success_url(self):
+        return reverse("thanks")
+
+    def get_context_data(self, **kwargs):
+        self.request.session['language'] = 'en'
+
+        context = super().get_context_data(**kwargs)
+        return context
+    
+    def form_valid(self, form):
+        email = form.cleaned_data.get("email")
+        name = form.cleaned_data.get("name")
+        organization_or_affiliation = form.cleaned_data.get("organization_or_affiliation")
+        message = form.cleaned_data.get("message")
+
+        html_content = render_to_string('email.html',
+                                        {'name': name,
+                                         'email': email,
+                                         'org_or_affilitaion': organization_or_affiliation,
+                                         'message': message})
+
+        full_message = f"""
+            The following details were provided with this request:
+            ________________________
+
+
+            NAME:
+            {name}
+
+            EMAIL ADDRESS:
+            {email}
+
+            ORGANIZATION OR AFFILIATION:
+            {organization_or_affiliation}
+
+            Why are you requesting access?:
+            {message}
+            """
+        send_mail(
+            subject="Access Requested to Palabra Campesina",
+            message=full_message,
+            from_email=settings.EMAIL_HOST_USER,
+            recipient_list=settings.EMAIL_HOST_USER,
+            html_message=html_content
+        )
+        return super().form_valid(form)

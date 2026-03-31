@@ -6,10 +6,15 @@
 @import url("../css/sobre.css");
 @import url("../css/footer.css");
 @import url("../css/password.css");
+@import url("../css/access.css");
 
 :root {
 	--palabra-green: #d3e399;
 	--hover-green: #c3d28d;
+}
+
+label {
+    font-weight: bold;
 }
 
 @font-face {

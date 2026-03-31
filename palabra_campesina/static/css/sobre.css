@@ -28,6 +28,15 @@
     font-size: 1.2em;
 }
 
+a {
+    color: black;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
 /* images in sobre page */
 #alex_img {
     width: 90%;
