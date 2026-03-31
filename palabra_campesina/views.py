@@ -185,7 +185,7 @@ class AccesoView(generic.FormView):
             subject="Access Requested to Palabra Campesina",
             message=full_message,
             from_email=settings.EMAIL_HOST_USER,
-            recipient_list=settings.EMAIL_HOST_USER,
+            recipient_list=[settings.EMAIL_HOST_USER],
             html_message=html_content
         )
         return super().form_valid(form)
@@ -327,7 +327,7 @@ class AccessView(generic.FormView):
             subject="Access Requested to Palabra Campesina",
             message=full_message,
             from_email=settings.EMAIL_HOST_USER,
-            recipient_list=settings.EMAIL_HOST_USER,
+            recipient_list=[settings.EMAIL_HOST_USER],
             html_message=html_content
         )
         return super().form_valid(form)
