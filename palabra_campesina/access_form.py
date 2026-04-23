@@ -41,5 +41,5 @@ class AccesoForm(forms.Form):
 
     mensaje = forms.CharField(
         label="¿Por qué estás solicitando acceso? (requerido):",
-        widget=forms.Textarea(attrs={"placeholder": "Please briefly describe how you intend to use this resource.", "style": "width:100%; height: 10vh;"})
+        widget=forms.Textarea(attrs={"placeholder": "Por favor, describe brevemente cómo piensas utilizar este recurso.", "style": "width:100%; height: 10vh;"})
     )
